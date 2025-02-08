@@ -12,20 +12,3 @@ export default function App() {
     </div>
   );
 }
-
-// return (
-//     <>
-//     <TopNav />
-//     </>
-// )
-// return (
-//     <Router>
-//         {/*<Layout>*/}
-//             hi
-//             {/*<Routes>*/}
-//             {/*    <Route path="/" element={<Home />} />*/}
-//             {/*    <Route path="/about" element={<About />} />*/}
-//             {/*</Routes>*/}
-//         {/*</Layout>*/}
-//     </Router>
-// );
