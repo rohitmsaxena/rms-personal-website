@@ -1,34 +1,14 @@
 import WorkExperience from "../components/WorkExperience";
+import Layout from "../components/Layout";
 
 export default function ProfilePage() {
   return (
     <>
-      <div className="navbar">
-        <div className="flex-1">
-          <a className={"btn btn-ghost text-5xl"}>Rohit Saxena</a>
-        </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Work Experience</a>
-            </li>
-            <li>
-              <a>CAD</a>
-            </li>
-            <li>
-              <a>Projects</a>
-            </li>
-            <li>
-              <a>Articles</a>
-            </li>
-            <li>
-              <a>Contact Me!</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Layout />
       <div className="divider divider-accent before:h-2 after:h-2" />
-      <WorkExperience />
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <WorkExperience />
+      </div>
     </>
   );
 }

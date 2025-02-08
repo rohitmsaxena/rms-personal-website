@@ -4,6 +4,7 @@
     "company": "XeroShoes",
     "location": "Remote",
     "period": "Oct. 2024 - Jan. 2025",
+    "icon": "src/assets/XeroShoes.png",
     "details": [
       "Developed a migration strategy to lift-and-shift a WordPress application from bare metal to AWS.",
       "Designed and implemented AWS cloud architecture using Terraform, including multi-account OUs.",
@@ -15,6 +16,7 @@
     "company": "Revacomm",
     "location": "Remote",
     "period": "Feb. 2024 - Oct. 2024",
+    "icon": "src/assets/Revacomm.png",
     "details": [
       "Developed encryption functionality for digital signatures on classified mission paperwork.",
       "Digitized mission scheduling, reducing planning time by 50%.",
@@ -28,6 +30,7 @@
     "company": "Target",
     "location": "Remote",
     "period": "Aug. 2022 - Feb. 2024",
+    "icon": "src/assets/Target.png",
     "details": [
       "Led Camunda Workflow development to automate nationwide RFID Reader installation.",
       "Developed workflows to onboard IoT devices, achieving 100% automation.",
@@ -39,6 +42,7 @@
     "company": "iHeartMedia",
     "location": "San Antonio, TX",
     "period": "May 2019 - Aug. 2022",
+    "icon": "src/assets/iHeartMedia.png",
     "details": [
       "Developed micro frontend architecture, reducing development time by 15%.",
       "Led company-wide transition to micro frontends with training sessions.",
@@ -50,6 +54,7 @@
     "company": "HEB",
     "location": "San Antonio, TX",
     "period": "May 2018 - May 2019",
+    "icon": "src/assets/HEB.png",
     "details": [
       "Developed an AngularJS/Java Spring Boot application for pharmacists.",
       "Used Babel.js to maintain compatibility with legacy browsers.",

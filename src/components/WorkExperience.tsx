@@ -9,7 +9,6 @@ export default function WorkExperience() {
 
         <div className="space-y-8">
           {experiences.map((exp, index) => {
-            // Randomize direction (Left or Right)
             const direction = Math.random() > 0.5 ? 200 : -200;
             const rotation = Math.random() > 0.5 ? 8 : -8; // Add slight rotation
 
@@ -32,16 +31,26 @@ export default function WorkExperience() {
                   delay: index * 0.3, // Slower stagger for drama
                 }}
               >
-                <motion.h3
-                  className="text-2xl font-semibold text-center"
-                  whileHover={{ scale: 1.1, rotate: 2 }}
-                  transition={{ type: "spring", stiffness: 200 }}
-                >
-                  {exp.title}
-                </motion.h3>
+                <div className="relative flex items-center justify-center w-full">
+                  <motion.h3
+                    className="text-2xl font-semibold"
+                    whileHover={{ scale: 1.1, rotate: 2 }}
+                    transition={{ type: "spring", stiffness: 200 }}
+                  >
+                    {exp.title} @ {exp.company}
+                  </motion.h3>
+
+                  <motion.img
+                    src={exp.icon}
+                    alt={`${exp.company} Logo`}
+                    className="h-12 w-12 object-contain absolute right-10"
+                    transition={{ type: "spring", stiffness: 200 }}
+                  />
+                </div>
                 <p className="text-sm text-gray-500 text-center">
-                  {exp.company} - {exp.location} | {exp.period}
+                  {exp.location} | {exp.period}
                 </p>
+
                 <ul className="list-disc list-inside mt-3 space-y-2">
                   {exp.details.map((detail, i) => (
                     <motion.li
