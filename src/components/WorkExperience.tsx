@@ -1,65 +1,7 @@
 import { motion } from "motion/react";
+import experiences from "../data/workexperience-list.json";
 
 export default function WorkExperience() {
-  const experiences = [
-    {
-      title: "Cloud Architect",
-      company: "XeroShoes",
-      location: "Remote",
-      period: "Oct. 2024 - Jan. 2025",
-      details: [
-        "Developed a migration strategy to lift-and-shift a WordPress application from bare metal to AWS.",
-        "Designed and implemented AWS cloud architecture using Terraform, including multi-account OUs.",
-        "Optimized VPC address space planning for efficient network segmentation.",
-      ],
-    },
-    {
-      title: "Technical Lead / Sr. Full Stack Engineer",
-      company: "Revacomm",
-      location: "Remote",
-      period: "Feb. 2024 - Oct. 2024",
-      details: [
-        "Developed encryption functionality for digital signatures on classified mission paperwork.",
-        "Digitized mission scheduling, reducing planning time by 50%.",
-        "Implemented RTK Query codegen, improving development time by 10%.",
-        "Built a proof of concept for an AI-powered scheduling assistant.",
-        "Led and mentored developers to enhance technical skills.",
-      ],
-    },
-    {
-      title: "Senior Backend Developer",
-      company: "Target",
-      location: "Remote",
-      period: "Aug. 2022 - Feb. 2024",
-      details: [
-        "Led Camunda Workflow development to automate nationwide RFID Reader installation.",
-        "Developed workflows to onboard IoT devices, achieving 100% automation.",
-        "Built Grafana dashboards to monitor workflow efficiency.",
-      ],
-    },
-    {
-      title: "Frontend Architect / Full Stack Lead Developer",
-      company: "iHeartMedia",
-      location: "San Antonio, TX",
-      period: "May 2019 - Aug. 2022",
-      details: [
-        "Developed micro frontend architecture, reducing development time by 15%.",
-        "Led company-wide transition to micro frontends with training sessions.",
-        "Built a sales platform used for 95% of all ad sales, increasing revenue by 10%.",
-      ],
-    },
-    {
-      title: "Developer II",
-      company: "HEB",
-      location: "San Antonio, TX",
-      period: "May 2018 - May 2019",
-      details: [
-        "Developed an AngularJS/Java Spring Boot application for pharmacists.",
-        "Used Babel.js to maintain compatibility with legacy browsers.",
-        "Operated as Scrum Master for the team’s first Agile project.",
-      ],
-    },
-  ];
   return (
     <section className="py-12">
       <div className="container mx-auto px-4">
