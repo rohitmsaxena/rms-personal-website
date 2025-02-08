@@ -3,10 +3,9 @@ import experiences from "../data/workexperience-list.json";
 
 export default function WorkExperience() {
   return (
-    <section className="py-12">
+    <section id="work-experience" className="py-12 scroll-mt-20">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">Work Experience</h2>
-
         <div className="space-y-8">
           {experiences.map((exp, index) => {
             const direction = Math.random() > 0.5 ? 200 : -200;
