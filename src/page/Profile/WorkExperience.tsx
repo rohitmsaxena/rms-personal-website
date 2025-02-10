@@ -2,6 +2,11 @@ import { motion } from "motion/react";
 import experiences from "../../data/workexperience-list.json";
 import ProfileSection from "../../components/ProfileSection";
 
+const icons = import.meta.glob("../../assets/*.png", {
+  eager: true,
+  import: "default",
+});
+
 export default function WorkExperience() {
   return (
     <ProfileSection title={"Work Experience"} sectionId={"work-experience"}>
@@ -9,6 +14,7 @@ export default function WorkExperience() {
         {experiences.map((exp, index) => {
           const direction = Math.random() > 0.5 ? 200 : -200;
           const rotation = Math.random() > 0.5 ? 8 : -8; // Add slight rotation
+          const iconPath = icons[`../../assets/${exp.icon}`];
 
           return (
             <motion.div
@@ -39,7 +45,7 @@ export default function WorkExperience() {
                 </motion.h3>
 
                 <motion.img
-                  src={exp.icon}
+                  src={iconPath}
                   alt={`${exp.company} Logo`}
                   className="h-12 w-12 object-contain absolute right-10"
                   transition={{ type: "spring", stiffness: 200 }}
