@@ -13,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
             <a className="btn btn-ghost text-5xl">Rohit Saxena</a>
           </div>
           <div className="flex-none">
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu menu-horizontal px-1 items-center">
               <li>
                 <a
                   href="https://www.linkedin.com/in/rohitsaxena42/"
@@ -24,16 +24,17 @@ export default function Layout({ children }: LayoutProps) {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="w-6 h-6"
+                    fill="white"
+                    className="w-8 h-8 rounded-lg bg-[#0077B5] p-2"
                   >
+                    <rect width="24" height="24" rx="4" fill="#0077B5" />
                     <path
                       fillRule="evenodd"
                       d="M4.75 3a1.75 1.75 0 1 1 0 3.5A1.75 1.75 0 0 1 4.75 3zM3 8.25h3.5v12.5H3V8.25zM8.75 8.25H12v1.526c.534-.978 1.942-2.026 3.934-2.026 4.2 0 4.966 2.71 4.966 6.235v6.765h-3.5v-6.125c0-1.462-.026-3.34-2.05-3.34-2.053 0-2.37 1.605-2.37 3.22v6.245h-3.5V8.25z"
                       clipRule="evenodd"
+                      fill="white"
                     />
                   </svg>
-                  {/*<span>My LinkedIn</span>*/}
                 </a>
               </li>
               <li>
