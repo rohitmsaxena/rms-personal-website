@@ -6,7 +6,7 @@ export default function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<ProfilePage />} />
+          <Route path="/rms-personal-website" element={<ProfilePage />} />
         </Routes>
       </Router>
     </div>
