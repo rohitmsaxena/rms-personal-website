@@ -4,9 +4,9 @@ import ProfilePage from "./page/ProfilePage";
 export default function App() {
   return (
     <div>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
-          <Route path="/rms-personal-website/" element={<ProfilePage />} />
+          <Route path="/" element={<ProfilePage />} />
         </Routes>
       </Router>
     </div>
