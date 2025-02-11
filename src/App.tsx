@@ -1,7 +1,8 @@
+import ProfilePage from "./page/ProfilePage";
+
 export default function App() {
   console.log("app!");
-  return <div>hihihihihihihhi</div>;
-  // return <ProfilePage />;
+  return <ProfilePage />;
 }
 
 // {/*<HashRouter basename="/rms-personal-website/">*/}

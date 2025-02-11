@@ -45,7 +45,7 @@ export default function WorkExperience() {
                 </motion.h3>
 
                 <motion.img
-                  src={iconPath}
+                  src={iconPath as string}
                   alt={`${exp.company} Logo`}
                   className="h-12 w-12 object-contain absolute right-10"
                   transition={{ type: "spring", stiffness: 200 }}
