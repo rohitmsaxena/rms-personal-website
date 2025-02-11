@@ -41,13 +41,13 @@ export default function Layout({ children }: LayoutProps) {
                 <a href="#work-experience">Work Experience</a>
               </li>
               <li>
-                <a href="cad">CAD</a>
-              </li>
-              <li>
                 <a href="#projects">Projects</a>
               </li>
               <li>
                 <a href="#articles">Articles</a>
+              </li>
+              <li>
+                <a href="cad">CAD</a>
               </li>
               <li>
                 <a>Contact Me!</a>
@@ -61,7 +61,7 @@ export default function Layout({ children }: LayoutProps) {
       </div>
 
       {/* Page Content (Push Content Below Sticky Header) */}
-      <div className="pt-[5rem]">{children}</div>
+      <div>{children}</div>
     </>
   );
 }
