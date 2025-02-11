@@ -1,5 +1,5 @@
 export default function App() {
-  console.log("hi!");
+  console.log("app!");
   return <div>hihihihihihihhi</div>;
   // return <ProfilePage />;
 }
