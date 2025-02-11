@@ -6,8 +6,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/rms-personal-website/",
-  build: {
-    outDir: "dist", // Default output directory
-    assetsDir: "assets", // Keep assets in a subfolder
-  },
+  // build: {
+  //   //   outDir: "dist",
+  //   //   assetsDir: "assets",
+  //   rollupOptions: {
+  //     input: "index.html",
+  //   },
+  // },
 });

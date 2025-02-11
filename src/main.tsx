@@ -5,6 +5,8 @@ import React from "react";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
+    {/*<BrowserRouter basename={import.meta.env.BASE_URL}>*/}
     <App />
+    {/*</BrowserRouter>*/}
   </React.StrictMode>,
 );
