@@ -7,7 +7,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <div className="fixed top-0 left-0 w-full bg-base-100 z-50">
+      <div className="w-full bg-base-100 z-50">
         <div className="navbar">
           <div className="flex-1">
             <a className="btn btn-ghost text-5xl">Rohit Saxena</a>
