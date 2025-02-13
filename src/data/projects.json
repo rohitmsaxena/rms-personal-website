@@ -1,4 +1,13 @@
 [
+    {
+    "id": 6,
+    "name": "React Flow Project",
+    "description":
+    "A project to use React Flow to build SysMLv2 interconnection diagram. Accessibile at https://rohitmsaxena.github.io/react-flow-project/",
+    "languages": ["React"],
+    "frameworks": ["React Flow"],
+    "github": ["react-flow-project"]
+  },
   {
     "id": 1,
     "name": "react-vite-tailwind-daisyui-starter",
