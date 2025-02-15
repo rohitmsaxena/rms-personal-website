@@ -42,8 +42,13 @@ export default function Projects() {
                   <GithubRepoCard owner={"rohitmsaxena"} repo={githubUrl} />
                 ))}
               </div>
-              <div className="basis-2/3">
+              <div className="basis-2/3 prose">
                 <p>{project.description}</p>
+                {project.liveDemo && (
+                  <a href={project.liveDemo} target="_blank">
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>

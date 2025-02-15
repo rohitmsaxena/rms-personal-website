@@ -1,55 +1,56 @@
 [
-    {
-    "id": 6,
-    "name": "React Flow Project",
-    "description":
-    "A project to use React Flow to build SysMLv2 interconnection diagram. Accessibile at https://rohitmsaxena.github.io/react-flow-project/",
-    "languages": ["React"],
-    "frameworks": ["React Flow"],
-    "github": ["react-flow-project"]
+  {
+	"id": 6,
+	"name": "React Flow Project",
+	"description":
+	"A project to use React Flow to build SysMLv2 interconnection diagram. ",
+	"languages": ["React"],
+	"frameworks": ["React Flow"],
+	"github": ["react-flow-project"],
+	"liveDemo": "https://rohitmsaxena.github.io/react-flow-project/"
   },
   {
-    "id": 1,
-    "name": "react-vite-tailwind-daisyui-starter",
-    "description":
-    "A template project for new react project with tailwind 4.0 and daisy5-beta preinstalled",
-    "languages": ["TypeScript"],
-    "frameworks": ["React"],
-    "github": ["react-vite-tailwind-daisyui-starter"],
-    "isTemplate": true
+	"id": 1,
+	"name": "react-vite-tailwind-daisyui-starter",
+	"description":
+	"A template project for new react project with tailwind 4.0 and daisy5-beta preinstalled",
+	"languages": ["TypeScript"],
+	"frameworks": ["React"],
+	"github": ["react-vite-tailwind-daisyui-starter"],
+	"isTemplate": true
   },
   {
-    "id": 2,
-    "name": "Sisyphus",
-    "description":
-    "A mac app that creates a clipboard history that can be pasted from.",
-    "languages": ["Swift"],
-    "github": ["Sisyphus"]
+	"id": 2,
+	"name": "Sisyphus",
+	"description":
+	"A mac app that creates a clipboard history that can be pasted from.",
+	"languages": ["Swift"],
+	"github": ["Sisyphups"]
   },
   {
-    "id": 3,
-    "name": "AICocktail",
-    "description": "A chatgpt powered cocktail suggestion",
-    "languages": ["TypeScript"],
-    "frameworks": ["React", "ChatGPTAi"],
-    "github": ["Sisyphus"]
+	"id": 3,
+	"name": "AICocktail",
+	"description": "A chatgpt powered cocktail suggestion",
+	"languages": ["TypeScript"],
+	"frameworks": ["React", "ChatGPTAi"],
+	"github": ["Sisyphus"]
   },
   {
-    "id": 4,
-    "name": "Micro Frontend Projects",
-    "description":
-    "An example of how to create a microfrontend using Web Components in Angular. Consists of a parent repo and a child repo. The child repo is deployed into the parent.",
-    "languages": ["v.TypeScript"],
-    "frameworks": ["Angular"],
-    "github": ["microfrontend-parent-demo", "microfrontend-child-demo"]
+	"id": 4,
+	"name": "Micro Frontend Projects",
+	"description":
+	"An example of how to create a microfrontend using Web Components in Angular. Consists of a parent repo and a child repo. The child repo is deployed into the parent.",
+	"languages": ["v.TypeScript"],
+	"frameworks": ["Angular"],
+	"github": ["microfrontend-parent-demo", "microfrontend-child-demo"]
   },
   {
-    "id": 5,
-    "name": "DealScraper",
-    "description":
-    "A screen scraper deployed to google cloud to scrape deals from slickdeals.net using a serverless function and store in a firebase db.",
-    "languages": ["JavaScript", "Firebase"],
-    "frameworks": ["Serverless", "GCP"],
-    "github": ["Sisyphus"]
+	"id": 5,
+	"name": "DealScraper",
+	"description":
+	"A screen scraper deployed to google cloud to scrape deals from slickdeals.net using a serverless function and store in a firebase db.",
+	"languages": ["JavaScript", "Firebase"],
+	"frameworks": ["Serverless", "GCP"],
+	"github": ["Sisyphus"]
   }
 ]
