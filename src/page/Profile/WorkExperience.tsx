@@ -55,7 +55,7 @@ export default function WorkExperience() {
                 {exp.location} | {exp.period}
               </p>
 
-              <ul className="list-disc list-inside mt-3 space-y-2">
+              <ul className="list-disc list-inside mt-3 space-y-1">
                 {exp.details.map((detail, i) => (
                   <motion.li
                     key={i}

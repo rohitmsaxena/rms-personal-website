@@ -52,7 +52,7 @@ export const SKILLS: Skill[] = [
     language: "Node.js",
     frameworks: ["Axios", "Express", "Lodash"],
     type: SkillType.Backend,
-    icon: "",
+    icon: "https://cdn.iconscout.com/icon/free/png-512/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--nodejs-programming-language-pack-logos-icons-1174925.png?f=webp&w=512",
   },
   {
     language: "AWS",
@@ -65,7 +65,7 @@ export const SKILLS: Skill[] = [
       "Dynamodb",
       "Terraform",
     ],
-    icon: "",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
     type: SkillType.Cloud,
   },
   {

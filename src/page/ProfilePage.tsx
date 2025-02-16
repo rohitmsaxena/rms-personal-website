@@ -3,14 +3,13 @@ import Layout from "../components/Layout";
 import Projects from "./Profile/Projects";
 import Articles from "./Profile/Articles";
 import CAD from "./Profile/CAD";
-import Skills from "./Profile/Skills";
 
 export default function ProfilePage() {
   return (
     <>
       <Layout>
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <Skills />
+          {/*<Skills />*/}
           <WorkExperience />
           <Projects />
           <Articles />

@@ -2,15 +2,16 @@ import { WorkExperience } from "../types/WorkExperience";
 
 export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
   {
-    title: "Cloud Architect",
+    title: "AWS Cloud Architect",
     company: "XeroShoes",
     location: "Remote",
     period: "Oct. 2024 - Jan. 2025",
     icon: "XeroShoes.png",
     details: [
       "Developed a migration strategy to lift-and-shift a WordPress application from bare metal to AWS.",
-      "Designed and implemented AWS cloud architecture using Terraform, including multi-account OUs.",
-      "Optimized VPC address space planning for efficient network segmentation.",
+      "Designed and implemented the company’s AWS cloud architecture using Terraform.",
+      "Built and configured public/private VPC subnets for three environment layers, interconnected via a centralized network OU with a Transit Gateway and Internet Gateway.",
+      "Conducted CIDR range allocation, optimizing VPC address space planning and maintaining efficient network segmentation.",
     ],
   },
   {
@@ -20,11 +21,11 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     period: "Feb. 2024 - Oct. 2024",
     icon: "Revacomm.png",
     details: [
-      "Developed encryption functionality for digital signatures on classified mission paperwork.",
-      "Digitized mission scheduling, reducing planning time by 50%.",
-      "Implemented RTK Query codegen, improving development time by 10%.",
-      "Built a proof of concept for an AI-powered scheduling assistant.",
-      "Led and mentored developers to enhance technical skills.",
+      "Developed encryption functionality for digital signatures in Java Spring Boot application, enabling pilots to securely sign classified mission paperwork.",
+      "Fully digitized a previously paper-based mission scheduling process, reducing planning time by 50% and enabling remote operational planning with React/Java application.",
+      "Implemented codegen with RTK Query with custom slices, improving development time by 10%.",
+      "Built a React Native iPadOS app to allow pilots offline post-mission note-taking, cutting post-mission documentation time by 50%.",
+      "Led and mentored 5 developers to help them grow their technical skills and deliver functionality.",
     ],
   },
   {
@@ -34,9 +35,12 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     period: "Aug. 2022 - Feb. 2024",
     icon: "Target.png",
     details: [
-      "Led Camunda Workflow development to automate nationwide RFID Reader installation.",
-      "Developed workflows to onboard IoT devices, achieving 100% automation.",
-      "Built Grafana dashboards to monitor workflow efficiency.",
+      "Led project to adapt Camunda Workflow Engine to run in a non-native Java/Kotlin Micronaut environment to deploy within Target’s architecture.",
+      "Led and mentored 2 junior developers.",
+      "Created installation workflow to onboard IoT devices and install them nationwide; achieved 100% automation with multiple failover strategies. Initial rollout of 100 Target stores had 98% hand-off onboarding process.",
+      "Developed documentation and common design patterns in Camunda to handle logging, error handling, and Grafana dashboard monitoring to be used on all workflows.",
+      "Conducted training of dozens of developers on how to develop new Camunda workflows in Kotlin.",
+      "Enhanced stakeholder communication by building custom dashboards on top of complex Postgres queries to measure efficiency and time to completion of workflows.",
     ],
   },
   {
@@ -46,9 +50,13 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     period: "May 2019 - Aug. 2022",
     icon: "iHeartMedia.png",
     details: [
-      "Developed micro frontend architecture, reducing development time by 15%.",
-      "Led company-wide transition to micro frontends with training sessions.",
-      "Built a sales platform used for 95% of all ad sales, increasing revenue by 10%.",
+      "Spearheaded company initiative to transition Angular frontend projects into micro frontends, including company-wide training sessions, reducing development time by 15%.",
+      "Presented a 'Brown Bag' session highlighting the features of micro frontends and proposed a company-wide implementation path.",
+      "Created Node.js mock APIs to improve micro frontend testing.",
+      "Created and managed Angular/Java & NodeJS sales platform that was used for 95% of all ads sold, decreasing vendor costs and increasing digital ads revenue by 10% in a three-month period.",
+      "Developed AWS Kafka streams to process ad data in AWS Data Lakes.",
+      "Increased ad revenue by designing a new feature that allowed iHeartMedia to sell political ads under new national legal regulations, increasing political ad spot profitability.",
+      "Led a team of 8-10 offshore consultants in implementing functionality to see digital ads in an Angular/Java sales platform.",
     ],
   },
   {
@@ -58,8 +66,8 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     period: "May 2018 - May 2019",
     icon: "HEB.png",
     details: [
-      "Developed an AngularJS/Java Spring Boot application for pharmacists.",
-      "Used Babel.js to maintain compatibility with legacy browsers.",
+      "Architected & developed an AngularJS/Java Spring Boot application for HEB pharmacists to provide compounding drugs to customers with long-term illnesses, resulting in a 12% increase in profitability.",
+      "Used Babel.js to transpile ES10 syntax to ES5 to maintain compatibility with legacy browsers.",
       "Operated as Scrum Master for the team’s first Agile project.",
     ],
   },
