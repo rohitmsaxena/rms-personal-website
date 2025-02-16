@@ -1,8 +1,8 @@
 import ProfileSection from "../../components/ProfileSection";
-import { Project } from "../../types/projects";
+import { Project } from "../../types/Project";
 import { useEffect } from "react";
 import GithubRepoCard from "../../components/GithubRepoCard";
-import projects from "../../data/projects.json";
+import { PROJECT_LIST } from "../../data/ProjectList";
 
 declare global {
   interface Window {
@@ -13,7 +13,7 @@ declare global {
 }
 
 export default function Projects() {
-  const projectsData: Project[] = projects as Project[];
+  const projectsData: Project[] = PROJECT_LIST;
 
   useEffect(() => {
     // Ensure GitHub Embed script runs after React renders components

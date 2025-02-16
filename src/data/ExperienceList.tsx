@@ -1,0 +1,83 @@
+import { Experience, ExperienceType } from "../types/Experience";
+
+export const EXPERIENCE_LIST: Experience[] = [
+  {
+    language: "React",
+    frameworks: [
+      "Redux",
+      "RTK Query",
+      "MaterialUI",
+      "Tailwind",
+      "DaisyUI",
+      "Mocha",
+      "Jasmine",
+      "Selenium",
+      "Mocha",
+    ],
+    icon: "https://logotyp.us/file/react.svg",
+    type: ExperienceType.Frontend,
+  },
+  {
+    language: "Angular",
+    frameworks: [
+      "Ag-grid",
+      "Bootstrap",
+      "Angular Material",
+      "Storybook.js",
+      "Karma",
+      "Jest",
+      "Microfrontends",
+    ],
+    icon: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+    type: ExperienceType.Frontend,
+  },
+  {
+    language: "Java",
+    frameworks: [
+      "Spring Boot",
+      "Hibernate",
+      "JPA",
+      "MyBatis",
+      "Spring Testing",
+      "JUnit",
+      "Selenium",
+      "Cucumber",
+      "Mockito",
+      "Micronaut",
+    ],
+    type: ExperienceType.Backend,
+    icon: "",
+  },
+  {
+    language: "Node.js",
+    frameworks: ["Axios", "Express", "Lodash"],
+    type: ExperienceType.Backend,
+    icon: "",
+  },
+  {
+    language: "AWS",
+    frameworks: [
+      "CloudFormation",
+      "VPC/Subnetting",
+      "Serverless",
+      "Aurora",
+      "EC2",
+      "Dynamodb",
+      "Terraform",
+    ],
+    icon: "",
+    type: ExperienceType.Cloud,
+  },
+  {
+    language: "GCP",
+    frameworks: ["Cloud Run", "Firebase"],
+    icon: "",
+    type: ExperienceType.Cloud,
+  },
+  {
+    language: "DevOps",
+    frameworks: ["Github Actions", "Jenkins", "Grafana"],
+    icon: "",
+    type: ExperienceType.DevOps,
+  },
+];
