@@ -1,19 +1,19 @@
 import ProfileSection from "../../components/ProfileSection";
-import { EXPERIENCE_LIST } from "../../data/ExperienceList";
-import { ExperienceType } from "../../types/Experience";
+import { SKILLS } from "../../data/ExperienceList";
+import { SkillType } from "../../types/Skill";
 
-export default function LanguagesSection() {
-  const experienceList = EXPERIENCE_LIST;
+export default function Skills() {
+  const skills = SKILLS;
 
-  const getCardColor = (type: ExperienceType) => {
+  const getCardColor = (type: SkillType) => {
     switch (type) {
-      case ExperienceType.Frontend:
+      case SkillType.Frontend:
         return "bg-amber-600";
-      case ExperienceType.Backend:
+      case SkillType.Backend:
         return "bg-red-600";
-      case ExperienceType.Cloud:
+      case SkillType.Cloud:
         return "bg-blue-600";
-      case ExperienceType.DevOps:
+      case SkillType.DevOps:
         return "bg-green-600";
       default:
         return "bg-neutral";
@@ -23,17 +23,17 @@ export default function LanguagesSection() {
   return (
     <ProfileSection title={""} sectionId={""}>
       <div className="flex flex-wrap gap-2 ">
-        {experienceList.map((lang) => (
+        {skills.map((skill) => (
           <div className="card bg-neutral text-primary-content w-75 image-full">
             <figure>
-              <img src={lang.icon} alt="React" />
+              <img src={skill.icon} alt="React" />
             </figure>
             <div className="card-body">
-              <h1 className="card-title">{lang.language}</h1>
+              <h1 className="card-title">{skill.language}</h1>
               <p className="flex flex-wrap">
-                {lang.frameworks.map((framework) => (
+                {skill.frameworks.map((framework) => (
                   <div
-                    className={`${getCardColor(lang.type)} badge m-1 badge-sm`}
+                    className={`${getCardColor(skill.type)} badge m-1 badge-sm`}
                   >
                     {framework}
                   </div>

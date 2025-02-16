@@ -1,13 +1,13 @@
-export enum ExperienceType {
+export enum SkillType {
   "Frontend",
   "Backend",
   "Cloud",
   "DevOps",
 }
 
-export interface Experience {
+export interface Skill {
   language: string;
   frameworks: string[];
   icon: string;
-  type: ExperienceType;
+  type: SkillType;
 }

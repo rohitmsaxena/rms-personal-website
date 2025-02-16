@@ -1,6 +1,6 @@
-import { Experience, ExperienceType } from "../types/Experience";
+import { Skill, SkillType } from "../types/Skill";
 
-export const EXPERIENCE_LIST: Experience[] = [
+export const SKILLS: Skill[] = [
   {
     language: "React",
     frameworks: [
@@ -15,7 +15,7 @@ export const EXPERIENCE_LIST: Experience[] = [
       "Mocha",
     ],
     icon: "https://logotyp.us/file/react.svg",
-    type: ExperienceType.Frontend,
+    type: SkillType.Frontend,
   },
   {
     language: "Angular",
@@ -29,7 +29,7 @@ export const EXPERIENCE_LIST: Experience[] = [
       "Microfrontends",
     ],
     icon: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
-    type: ExperienceType.Frontend,
+    type: SkillType.Frontend,
   },
   {
     language: "Java",
@@ -45,13 +45,13 @@ export const EXPERIENCE_LIST: Experience[] = [
       "Mockito",
       "Micronaut",
     ],
-    type: ExperienceType.Backend,
+    type: SkillType.Backend,
     icon: "",
   },
   {
     language: "Node.js",
     frameworks: ["Axios", "Express", "Lodash"],
-    type: ExperienceType.Backend,
+    type: SkillType.Backend,
     icon: "",
   },
   {
@@ -66,18 +66,18 @@ export const EXPERIENCE_LIST: Experience[] = [
       "Terraform",
     ],
     icon: "",
-    type: ExperienceType.Cloud,
+    type: SkillType.Cloud,
   },
   {
     language: "GCP",
     frameworks: ["Cloud Run", "Firebase"],
     icon: "",
-    type: ExperienceType.Cloud,
+    type: SkillType.Cloud,
   },
   {
     language: "DevOps",
     frameworks: ["Github Actions", "Jenkins", "Grafana"],
     icon: "",
-    type: ExperienceType.DevOps,
+    type: SkillType.DevOps,
   },
 ];
