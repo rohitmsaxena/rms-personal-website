@@ -3,7 +3,6 @@ import { Project } from "../../types/projects";
 import { useEffect } from "react";
 import GithubRepoCard from "../../components/GithubRepoCard";
 import projects from "../../data/projects.json";
-import { Frameworks, Languages } from "../../types";
 
 declare global {
   interface Window {
@@ -14,11 +13,7 @@ declare global {
 }
 
 export default function Projects() {
-  const projectsData: Project[] = projects.map((project) => ({
-    ...project,
-    languages: project.languages as Languages[],
-    frameworks: project.frameworks as Frameworks[],
-  }));
+  const projectsData: Project[] = projects as Project[];
 
   useEffect(() => {
     // Ensure GitHub Embed script runs after React renders components
@@ -31,7 +26,7 @@ export default function Projects() {
     <ProfileSection title={"Projects"} sectionId={"projects"}>
       <div className="join join-vertical w-full">
         {projectsData.map((project, index) => (
-          <div key={index} className="collapse collapse-plus bg-base-200">
+          <div key={index} className="collapse collapse-plus bg-base-200 m-1">
             <input type="radio" name="project-accordion" />
             <div className="collapse-title text-lg font-medium">
               {project.name}
@@ -42,7 +37,13 @@ export default function Projects() {
                   <GithubRepoCard owner={"rohitmsaxena"} repo={githubUrl} />
                 ))}
               </div>
-              <div className="basis-2/3 prose">
+              <div className="basis-2/3">
+                {project.languages?.map((framework) => (
+                  <span className="badge badge-primary m-1">{framework}</span>
+                ))}
+                {project.frameworks?.map((framework) => (
+                  <span className="badge badge-secondary m-1">{framework}</span>
+                ))}
                 <p>{project.description}</p>
                 {project.liveDemo && (
                   <a href={project.liveDemo} target="_blank">
