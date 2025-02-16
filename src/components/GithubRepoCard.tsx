@@ -34,17 +34,15 @@ export default function GithubRepoCard({ owner, repo }: GitHubRepoCardProps) {
   if (error) return <div className="p-4 text-red-500">Error: {error}</div>;
 
   return (
-    <div className="card bg-base-100 shadow-lg p-4 rounded-lg max-w-md m-3">
-      <div className="flex items-center gap-4">
+    <div className="card bg-base-100 shadow-lg p-2 rounded-lg max-w-md m-2">
+      <div className="flex items-center gap-2">
         <img
           src={repoData.owner.avatar_url}
           alt={repoData.owner.login}
           className="w-12 h-12 rounded-full"
         />
         <div className="w-full">
-          <h2 className="text-lg font-bold break-normal">
-            {repoData.full_name}
-          </h2>
+          <h2 className="text-lg font-bold break-all">{repoData.full_name}</h2>
           <a
             href={repoData.html_url}
             target="_blank"

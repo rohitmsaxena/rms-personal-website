@@ -25,7 +25,7 @@
 	"description":
 	"A mac app that creates a clipboard history that can be pasted from.",
 	"languages": ["Swift"],
-	"github": ["Sisyphups"]
+	"github": ["Sisyphus"]
   },
   {
 	"id": 3,
