@@ -38,6 +38,9 @@ export default function Layout({ children }: LayoutProps) {
                 </a>
               </li>
               <li>
+                <a href="#tech-stack">Tech Stack</a>
+              </li>
+              <li>
                 <a href="#work-experience">Work Experience</a>
               </li>
               <li>
