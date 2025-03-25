@@ -1,5 +1,11 @@
 import { Skill, SkillType } from "../types/Skill";
 
+interface TechCategory {
+  name: string;
+  color: string;
+  technologies: string[];
+}
+
 export const SKILLS: Skill[] = [
   {
     language: "React",
@@ -80,4 +86,90 @@ export const SKILLS: Skill[] = [
     icon: "",
     type: SkillType.DevOps,
   },
+];
+
+export const TECH_CATEGORIES: TechCategory[] = [
+  {
+    name: "Frontend",
+    color: "bg-amber-500",
+    technologies: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Redux",
+      "RTK Query",
+      "Next.js",
+      "MaterialUI",
+      "CSS/SCSS",
+      "React Native",
+      "Angular",
+      "Cypress",
+      "Jest",
+      "Selenium",
+      "Jasmine",
+      "Mocha",
+      "SwiftUI",
+      "TailwindCSS",
+      "DaisyUI",
+    ],
+  },
+  {
+    name: "Backend",
+    color: "bg-blue-500",
+    technologies: [
+      "Kotlin",
+      "Java",
+      "Spring Boot",
+      "Micronaut",
+      "Camunda",
+      "Serverless",
+      "Kafka",
+      "Node.js",
+      "AWS SNS",
+      "AWS SES",
+    ],
+  },
+  {
+    name: "Database",
+    color: "bg-green-500",
+    technologies: [
+      "PostgreSQL",
+      "AWS RDS",
+      "MongoDB",
+      "DynamoDB",
+      "ElastiCache",
+    ],
+  },
+  {
+    name: "Architecture",
+    color: "bg-purple-500",
+    technologies: ["Microservices", "Micro Frontends", "Serverless"],
+  },
+  {
+    name: "DevOps",
+    color: "bg-red-500",
+    technologies: [
+      "Terraform",
+      "AWS CloudFormation",
+      "Jenkins",
+      "Kubernetes",
+      "GitHub Actions",
+      "Grafana",
+      "CI/CD",
+    ],
+  },
+  {
+    name: "Cloud",
+    color: "bg-cyan-500",
+    technologies: ["AWS", "GCP", "Firebase"],
+  },
+];
+
+export const RADAR_DATA = [
+  { subject: "Frontend", A: 95, fullMark: 100 },
+  { subject: "Backend", A: 90, fullMark: 100 },
+  { subject: "Cloud", A: 85, fullMark: 100 },
+  { subject: "DevOps", A: 80, fullMark: 100 },
+  { subject: "Architecture", A: 85, fullMark: 100 },
+  { subject: "Database", A: 80, fullMark: 100 },
 ];
